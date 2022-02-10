@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.outer {
+  width: 100%;
+  height: 100vh;
+  background-color: #2d283e;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+/* Works on Firefox */
+.itemRow {
+  scrollbar-width: thin;
+  scrollbar-color: white;
+}
+
+.itemRow::-webkit-scrollbar {
+  width: 10px;
+}
+
+.itemRow::-webkit-scrollbar-track {
+  background: orange;
+}
+
+.itemRow::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 20px;
+  border: 3px solid orange;
+}
+.itemRow {
+  height: 85vh;
+  overflow-y: scroll;
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+}
+
+.mainList h3 {
+  margin: 1rem;
+  color: #bac1c9;
+}
+.mainList {
+  width: 30vw;
+  text-align: center;
+  background-color: #474256;
+  /* border: 1px solid #d0d7e1; */
+}
+
+.singleItem {
+  display: flex;
+  margin: 1rem;
+  background-color: #2d283e;
+}
+/* .singleItem > * {
+  margin: 2rem;
+} */
+.singleItem :nth-child(3) {
+  color: white;
+  margin-left: auto;
+  margin: 1.5rem !important;
+}
+.singleItem :nth-child(2) {
+  color: #9354bd;
+  width: 204px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 22px;
+  margin: 1rem;
+}
+
+.singleItem input {
+  margin: 1.5rem;
+}
+
+.singleItem :hover {
+  color: #9775ad;
+}
+
+.addItem {
+  position: absolute;
+  left: 6%;
+  width: 24vw;
+  height: 30vh;
+  background-color: white;
+}
+i {
+  cursor: pointer;
+}
+
+.inputRow input {
+  margin: 2rem;
+  width: 68%;
+  padding: 17px;
+  outline: none;
+  border: 1px solid violet;
+  border-radius: 7px;
+  font-size: 19px;
+}
+.inputRow input:focus {
+  border: 1px solid darkblue;
+}
+.inputRow :first-child {
+  position: relative;
+}
+.inputRow i {
+  font-size: 21px;
+  position: absolute;
+  left: 72%;
+  top: 29%;
+  padding: 1rem;
+  background-color: white;
+}
